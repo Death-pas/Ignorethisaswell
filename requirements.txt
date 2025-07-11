@@ -1,0 +1,12 @@
+requests 
+discord 
+discord_webhook
+pystyle 
+datetime 
+clipboard 
+cloudscraper
+socks
+pysocks
+colorama
+httpx
+pypresence
