@@ -1,0 +1,60 @@
+import pystyle
+from pystyle import *
+import colorama
+from colorama import *
+import os
+import sys
+
+colorama.init(autoreset=True)
+
+g = Fore.GREEN
+y = Fore.YELLOW
+b = Fore.LIGHTCYAN_EX
+r = Fore.RED
+reset = Style.RESET_ALL
+
+main = f"""
+{g}  ______    ______            __{reset}
+{g} /_  __/  _/_  __/___  ____  / /{reset}
+{g}  / / | |/_// / / __ \/ __ \/ /{reset}
+{y} / / _>  < / / / /_/ / /_/ / /{reset}
+{y}/_/ /_/|_|/_/  \____/\____/_/{reset}
+
+Author : {b}Death{reset}
+Discord: {b}@_.--_Death_-__.{reset}
+Github : {b}death_pas{reset}
+Thanks : {b}Zerlone,HVD,Muddy{reset}
+{r}I am not responsible for damage done with this{reset}
+{r}---------------------------------{reset}
+{r}---------------------------------{reset}
+"""
+selection = f"""
+[{g}1{reset}] {b}Advanced Hardware Exploitation{reset}
+[{g}2{reset}] {b}Brute Force wifi & password tool{reset}
+[{g}3{reset}] {b}Advanced Nmap scanning{reset}
+[{g}4{reset}] {b}Advanced Tracing and Tracking{reset}
+[{g}5{reset}] {b}Dorking For SQL Injection Vulnerability{reset}
+[{g}6{reset}] {b}Xss Web attack{reset}
+[{g}7{reset}] {b}Exploiting SCADA System{reset}
+[{g}8{reset}] {b}Message Bombing{reset}
+[{g}9{reset}] {b}Create HWID Viruses for different operating systems{reset}
+[{g}10{reset}] {b}Aircrack NG{reset}
+[{g}11{reset}] {b}Advanced Camera Distrobution{reset}
+[{g}w{reset}] {b}Exit{reset}
+"""
+
+prompt = f"{g}tXtool{reset}{y}_> {reset}"
+
+def exit():
+    sys.exit(1)
+
+def menu():
+    while True:
+        print(main)
+        print(selection)
+        choice = input(prompt)
+        if choice.lower() == 'q':
+            print(f"{r}[!] Thank you for using Txtool! Have a great day!{reset}")
+            exit()
+
+menu()
