@@ -40,7 +40,7 @@ selection = f"""
 [{g}9{reset}] {b}Create HWID Viruses for different operating systems{reset}
 [{g}10{reset}] {b}Aircrack NG{reset}
 [{g}11{reset}] {b}Advanced Camera Distrobution{reset}
-[{g}w{reset}] {b}Exit{reset}
+[{g}q{reset}] {b}Exit{reset}
 """
 
 prompt = f"{g}tXtool{reset}{y}_> {reset}"
